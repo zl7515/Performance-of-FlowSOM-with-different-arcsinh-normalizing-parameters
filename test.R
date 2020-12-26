@@ -17,7 +17,7 @@ library(clue)
 
 # filenames
 
-DATA_DIR <- "/stornext/Bioinf/data/lab_speed/zonglun/test_cytofkit/FlowRepository_FR-FCM-ZZPH_files"
+DATA_DIR <- "./FlowRepository_FR-FCM-ZZPH_files"
 
 files <- list(
   Levine_32dim = file.path(DATA_DIR, "Levine_32dim.fcs"), 
@@ -274,12 +274,12 @@ sapply(clus, length)
 ###########################################################################################
 
 # helper functions to match clusters and evaluate
-source("/stornext/Bioinf/data/lab_speed/zonglun/test_cytofkit/cytometry-clustering-comparison-master/helpers/helper_match_evaluate_multiple.R")
+source("./cytometry-clustering-comparison-master/helpers/helper_match_evaluate_multiple.R")
 #source("../helpers/helper_match_evaluate_single.R")
 #source("../helpers/helper_match_evaluate_FlowCAP.R")
 #source("../helpers/helper_match_evaluate_FlowCAP_alternate.R")
 
-DATA_DIR <- "/stornext/Bioinf/data/lab_speed/zonglun/test_cytofkit/FlowRepository_FR-FCM-ZZPH_files"
+DATA_DIR <- "./FlowRepository_FR-FCM-ZZPH_files"
 
 # which data sets required subsampling for this method (see parameters spreadsheet)
 is_subsampled <- c(FALSE, FALSE, FALSE, FALSE)
